@@ -1,0 +1,24 @@
+3. Uma pessoa estudante do curso de Ciência da Computação paralelizou determinado
+algoritmo de ordenação de dados. Ao finalizar a codificação, e imprimir os tempos, foi
+possível perceber que o processo paralelizado gastou mais tempo que o processo serial.
+Disserte o motivo disso.(1 ponto)
+
+
+Existem varios motivos para que a paralelização tenha demorado mais do que a ordenação serial como:
+
+Overhead da paralelização, em que o tempo necessário para organizar a paralelização é muito alto.
+Então dividir os dados ou tarefas e atribuir-las para as threads está comsumindo muito tempo, sendo
+necessário rever essa divisão.
+
+Má distribuição de dados, também é um problema comun quando se vai paralelizar, é possivel que
+a divisão de tarefas de forma ineficiênte esteja atrasando o algoritimo de ordenação, já que teremos threads
+processado por mais tempo do que outras, atrasando o processo de ordenação geral, tornado-o pior que o serial.
+
+É possivel também que o caso de teste usado nos algoritimos não seja adequando para testar a eficiência,
+uma vez que algoritimos que usam da paralelização são melhores quando aplicados para grandes volumes de dados
+é possivel que o caso testado para comparar os tempos de execução não tenham um volume adequado fazendo
+o algoritimo paralelo performar pior que o serial.
+
+Outra possibilidade é a escolha do algoritimo de ordenação ou uma má implentação, já a maneira como o algoritmo
+paralelo foi desenvolvido pode resultar em uma ordenação ineficiente, tornado o algoritimo paralelo uma pessima
+opção na ordenação dos dados.

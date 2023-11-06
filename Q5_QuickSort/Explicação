@@ -1,0 +1,17 @@
+Na questão 4, foi proposta a paralelização do quicksort como sendo uma boa escolha, onde um dos aspectos levados em consideração
+foi que o uso da divião e conquista na ordenação resultaria em uma facil e eficaz paralelização do algoritimo, e que devido a sua
+eficácia ele so teria um ganho de tempo na sua paralelização para grandes volumes de dados. No entanto ao parlelizar o algoritimo,
+foi constatado um aumento consideravel no tempo de execução.
+
+1000
+Serial = 2ms
+Paralelo = 168ms
+
+100.000
+Serial = 80ms
+Paralelo
+
+Como podemos ver mesmo para greandes volumes de dados a paralelização ainda não é viavel, isso se deve ao fato de que o algoritimo
+já é muito eficaz na forma serial, quando paralelizado essa modelagem vai criando uma thread para cada divisão entre maior e menor
+que o elemnto pivo, gerando uma paralelização execiva, maior que o numero de threads e perde muito tempo para organizar as threads
+e juntar os dados no final do processo, causando um overhead e inviabilizando a paralelização.
