@@ -3,17 +3,17 @@
 interessante paralelizar. Se sim, o que seria essa paralelização? Disserte
 
 Quick sort
-É um dos metodo de ordenaço mais conhecidos por ser rápido e eficiente, é um algoritimo que usa da divisão e conquista.
-O quick sort começa escolhendo um pivô e dividi a lista em dois subconjuntos, um com elementos menores que o pivô
-e outro com elementos maiores, então o pivo é colocado no final da lista e o processo de divisão é aplicado novamente
-até que a lista esteja ordenada.
+
+É um dos métodos de ordenação mais conhecidos por ser rápido e eficiente, é um algoritmo que usa da divisão e conquista.
+O quicksort começa escolhendo um pivô e divide a lista em dois subconjuntos, um com elementos menores que o pivô e outro com elementos
+maiores, então o pivô é colocado no final da lista e o processo de divisão é aplicado novamente até que a lista esteja ordenada.
 
 Complexidade
 Pior caso: O(n^2)
 Melhor Caso: O(n logn)
 
-O quick sort tem uma compexidade media de O(n logn), isso porque a escolha de de um pivo aleatório tende a dividir a lista
-aproximadamente no meio, tonando ele um ótimo algoritmo de ordenação, alem disso ele é facilmente paralelizável, já que é preciso dividir
-a lista em partes relativamente iguais é possível ordernar-las de forma paralela, o mesmo se aplica as proximas divisões caso necessário.
-Então o quick sort é facilmente paralelizavel, mas devido a sua grande eficiência, a paralelização so será viável para grande volumes de dados,
-já que o overhead de paralelização pode deixar o processo mais lento do que o ganho que podemos ter ao parelizar.
+O quicksort tem uma complexidade média de O(n logn), isso porque a escolha de de um pivo aleatório tende a dividir a lista
+aproximadamente no meio, tornando ele um ótimo algoritmo de ordenação, além disso ele é facilmente paralelizável, já que é preciso dividir
+a lista em partes relativamente iguais é possível ordená-las de forma paralela, o mesmo se aplica às próximas divisões caso necessário.
+Então o quicksort é facilmente paralelizável, mas devido a sua grande eficiência, a paralelização só será viável para grande volumes
+de dados, já que o overhead de paralelização pode deixar o processo mais lento do que o ganho que podemos ter ao paralelizar.
